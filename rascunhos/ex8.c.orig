@@ -1,0 +1,155 @@
+/* *********************************************************************** *
+ *    PROGRAM_NAME, VERSION                                                 *
+ *    BRIEF_DESCRIPTION                                                     *
+ *                                                                          *
+ *  Copyright (C) 2021 by Silas Natanael Silva De Souza                     *
+ *                                                                          *
+ *    This program is free software; you can redistribute it and/or modify  *
+ *    it under the terms of the GNU General Public License as published by  *
+ *    the Free Software Foundation; either version 2 of the License, or     *
+ *    (at your option) any later version.                                   *
+ *                                                                          *
+ *    This program is distributed in the hope that it will be useful,       *
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *    GNU General Public License for more details.                          *
+ *                                                                          *
+ *    You should have received a copy of the GNU General Public License     *
+ *    along with this program; if not, write to the                         *
+ *    Free Software Foundation, Inc.,                                       *
+ *    59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ *                                                                          *
+ *  To contact the author, please write to:                                 *
+ *  Name: Silas Natanael Silva De Souza <snss@poli.br>                      *
+ *  Webpage: http://beco.poli.br/~username                                  *
+ *  Phone: (81) 98361-9055                                                  *
+ * ************************************************************************ *
+ * 
+ */
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<string.h>
+
+int main(void)
+{
+    int numeros[500];
+    int i=0, j=0;
+    int igualdade;
+
+    void bubble_sort(int numeros[]);
+
+    srand(time(NULL));
+
+    do
+    {
+        igualdade = 0;
+        numeros[i] = rand() % 500;
+        for(j=0; j<i; j++)
+        {
+            if(numeros[j] == numeros[i])
+                igualdade = 1;
+        }
+        if(igualdade == 0)
+        {
+            i++;
+        }
+    }
+    while(i<500);
+
+    printf("\n\n");
+
+    for(i=0; i<500; i++)
+    {
+        printf("%4d| ", numeros[i]);
+    }
+
+    printf("\n\n");
+
+    bubble_sort(numeros);
+
+    return 0;
+}
+void bubble_sort(int numeros[])
+{
+    int contador=0;
+    int aux=0;
+    int i=0;
+    int comparacoes=0;
+    int trocas=0;
+
+    // Algoritmo de ordenação Bubblesort:
+ for (contador = 1; contador < 500; contador++) 
+ {
+   for (i = 0; i < 500 - 1; i++) 
+   {
+       comparacoes++;
+     if (numeros[i] > numeros[i + 1]) 
+     {
+        aux = numeros[i];
+        numeros[i] = numeros[i + 1];
+        numeros[i + 1] = aux;
+        trocas++;
+     }
+   }
+ }
+
+ printf("\n\nOrdem crescente usando bubble sort:\n\n");
+
+ for (i = 0; i < 500; i++)
+ {
+    printf("%4d", numeros[i]);
+ }
+
+ printf("\n\n");
+
+ printf("\n\n Comparacoes: %d             Trocas: %d\n\n", comparacoes, trocas);
+
+ /*--------------*/
+contador=0;
+aux=0;
+i=0;
+comparacoes=0;
+trocas=0;
+
+  for (contador = 1; contador < 500; contador++)
+ {
+   for (i = 0; i < 500 - 1; i++)
+   {
+       comparacoes++;
+     if (numeros[i] > numeros[i + 1])
+     {
+        aux = numeros[i];
+        numeros[i] = numeros[i + 1];
+        numeros[i + 1] = aux;
+        trocas++;
+     }
+   }
+ }
+
+ printf("\n\nOrdem decrescente usando bubble sort:\n\n");
+
+ for (i = 0; i < 500; i++)
+ {
+    printf("%4d", numeros[i]);
+ }
+
+ printf("\n\n");
+
+ printf("\n\n Comparacoes: %d             Trocas: %d\n\n", comparacoes, trocas);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

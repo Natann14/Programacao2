@@ -1,0 +1,32 @@
+
+Login: snsds                            Name: Silas Natanael Silva De Souza
+Directory: /home/snsds                  Shell: /bin/bash
+Office: snss@poli.br, @silas210520001   Home Phone: (81) 98361-9055
+On since Tue Oct 19 10:54 (-03) on pts/1 from 179.49.91.23
+   3 seconds idle
+No mail.
+Project:
+= Curto prazo =
+    * Passar em programacao 2
+    * Aprender mais linguagem C
+    * Passar nas cadeiras do periodo
+
+= Medio prazo =
+    * Conseguir um estagio
+    * Aprender um novo idioma
+    * Aprender a tocar um novo instrumento musical
+
+= Longo prazo =
+    * Me formar
+    * Trabalhar
+    * Aperfeicoar os conhecimentos do curso
+
+Plan:
+Courses: programa2
+Birthday: 20010125
+CPF: 7090447****
+Freshman: 2018
+Hydra: 20211008
+Github: @natan-snsds
+Gitlab: @natan-snsds
+ProjectEuler:
